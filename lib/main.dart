@@ -9,13 +9,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Onboarding',
-      home: OnboardingScreen(
-        imageUrl: 'assets/images/slide-one.png',
-        title: 'La tua nuova app per la lista della spesa',
-        subtitle:
-            'Fai la spesa in modo più semplice con la nostra app. Crea liste della spesa, trova i prodotti nei supermercati e condividi le tue liste con gli amici.',
-      ),
+      home: OnboardingScreen(),
     );
   }
 }
